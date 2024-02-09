@@ -1,0 +1,247 @@
+/*Below is the code for the index page of the website*/
+a{
+    text-decoration: none;
+}
+.HomePageBackground{
+    background-image: url(Pictures/productbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*The background of the wording of the index page*/
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+  }
+/*This is the position and color of the menu text on all of the pages of the website as well as the rainbow hover effect*/
+#menu{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    
+}
+.cart-user a{
+    padding-left: 20px;
+}
+
+#menu a{
+    color:rgb(0, 0, 0);
+    font-family:cursive;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;    
+
+}
+
+#menu a:hover{
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-size:cover;
+    -webkit-background-clip: text; /*This is to make the text appear above the rainbow color*/
+    color: transparent;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.CompanyName{
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /*This gives the rain bow gradient background*/
+    background-size:cover;
+    -webkit-background-clip: text; /*This is to make the text appear above the rainbow color*/
+    color: transparent;
+    display: inline-block;
+    font-size: 50px;
+}
+
+
+
+.wording{
+    background-color: rgba(255, 255, 255, 0.519);
+    background-size: cover;
+    text-align: center;
+    padding: 10%;
+}
+
+/*This is the code for the product page of the wbesite*/
+.Background{
+    background: linear-gradient(to right, #ffcccc, #ffccff, #cc99ff, #99ccff, #ccffcc, #ffffcc, #ff9999);
+    margin: 0%;
+    
+}
+/*This the code for the product page*/
+
+.product {
+    padding-top: 10%;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.product:hover {
+    transform: translateY(-10px); 
+}
+
+/*This is the code for each of the different products on  the Product Page*/
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+.card{
+    width: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.619);
+
+}
+/*This is the code for the 3 smaller pictures of the product*/
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    border: solid 2px #c0bfbf;
+    border-radius: 8px;
+}
+/*This is the code for the wording and cart button display below the items pictures*/
+.card-wording{
+    padding: 16px;
+}
+.card-wording h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-wording li{
+    color: #000000;
+    font-size: 15px;
+}
+.card-wording ul{
+ padding: 20px;
+}
+.cart-button{
+display: inline-block;
+padding: 8px 16px ;
+background-color: #cc99ff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.619);
+border-radius: 4px;
+}
+.cart-button {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.cart-button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Below is the code for the Contacts Page*/
+
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+*
+{   margin:0;
+    padding:0;
+    font-family: 'Tangerine';
+    box-sizing: border-box;
+    
+}
+/*This is the code for the position of the 3 social media blocks as well as the effects as you hover over each one*/
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    top: 20%;
+    left: 250px;
+
+}
+/* This is the code for the Text Displayed when you hover over each block on the wbesite*/
+.social-media li::before{
+content:attr(data-text);
+position: absolute;
+top: 10%;
+left: 50%;
+font-size: 50px;
+transform: translate(-50%,calc(-50% + 120px));
+pointer-events: none;
+font-weight: 700;
+transition: 0.5s;
+opacity: 0;
+color: rgb(0, 0, 0);
+}
+.social-media li:hover:before{
+    opacity: 0.5;
+    transform: translate(70%,calc(-50% + 150px));
+}
+
+
+/*This is the code for the Individual Boxes on the website inclding thier position and the shadow effect behind the blocks*/
+.social-media li a{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    margin:20px;
+    font-size: 60px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: background 0.25s ;
+    /*Color*/
+    background-color: rgba(240, 235, 235, 0.401);
+    color: rgb(239, 235, 235);
+    box-shadow: 0 25px 35px rgb(100, 100, 100);
+
+}
+
+/*Hovering Over Icons Changing Block Color Change*/
+.social-media li a:hover.linkedin{
+    background: rgb(97, 97, 243);
+
+}
+
+
+.social-media li a:hover.gmail{
+    background: red;
+
+}
+.social-media li a:hover.phonenumber{
+    background: lightgreen;
+
+}
+
+
+/*This is the code for the About Us Page*/
+.AboutPageBackground{
+    background: linear-gradient(to right, #77fae9, #fab8e6);
+    margin: 0%;
+    background-size: 100%;
+}
+.aboutus{
+    padding-top: 5%;
+    text-align: center;
+    background: linear-gradient(to right, rgb(151, 1, 1),rgb(223, 145, 0),rgb(177, 177, 0),green,blue,indigo,violet);
+    background-size:cover;
+    -webkit-background-clip: text; /*This is to make the text appear above the rainbow color*/
+    color: transparent;
+    display: inline-block;
+}
+
+
