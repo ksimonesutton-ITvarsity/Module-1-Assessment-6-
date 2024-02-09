@@ -80,6 +80,11 @@ header {
 }
 
 /*This is the code for each of the different products on  the Product Page*/
+.Background{
+    background: linear-gradient(to right, #ffb6c1, #ffc0cb, #add8e6, #98fb98, #ffec8b, #ffd700, #e6e6fa);
+    background-size:cover;
+
+}
 .card-container{
     display: flex;
     justify-content: center;
