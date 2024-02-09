@@ -63,15 +63,14 @@ header {
     padding: 10%;
 }
 
-/*This is the code for the product page of the wbesite*/
-.Background{
-    background: linear-gradient(to right, #ffcccc, #ffccff, #cc99ff, #99ccff, #ccffcc, #ffffcc, #ff9999);
-    margin: 0%;
-    
-}
-/*This the code for the product page*/
+/*This is the code for the products on the page of the wbesite*/
 
+.Items-left{
+    font-size: 15px;
+    color: red;
+}
 .product {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.699);
     padding-top: 10%;
     transition: transform 0.3s ease-in-out; 
 }
